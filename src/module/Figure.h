@@ -2,9 +2,9 @@
 
 #include "ofMain.h"
 
-class Figure {
-
+static class Figure {
 public:
     void draw();
-
+    void drawCircle();
+    void drawGradation();
 };

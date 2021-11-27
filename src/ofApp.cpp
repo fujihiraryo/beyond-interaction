@@ -15,7 +15,9 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-    figure.draw();
+    // figure.draw();
+    // figure.drawCircle();
+    figure.drawGradation();
 }
 
 //--------------------------------------------------------------
