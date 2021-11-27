@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-static class Figure {
+class Figure {
 public:
     void draw();
     void drawCircle();
