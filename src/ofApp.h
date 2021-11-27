@@ -5,6 +5,8 @@
 
 class ofApp : public ofBaseApp {
 
+    Figure figure;
+
 public:
     void setup();
     void update();

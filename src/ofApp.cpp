@@ -5,6 +5,7 @@
 void ofApp::setup() {
     ofBackground(47, 47, 47);
     ofEnableAlphaBlending();
+    ofSetCircleResolution(100);
 }
 
 //--------------------------------------------------------------
@@ -14,7 +15,6 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-    Figure figure;
     figure.draw();
 }
 
