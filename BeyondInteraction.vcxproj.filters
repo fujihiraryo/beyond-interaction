@@ -16,6 +16,12 @@
     <ClCompile Include="src\module\Figure.cpp">
       <Filter>src\module</Filter>
     </ClCompile>
+    <ClCompile Include="src\module\RandomCircle.cpp">
+      <Filter>src\module</Filter>
+    </ClCompile>
+    <ClCompile Include="src\module\RandomBorder.cpp">
+      <Filter>src\module</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -33,6 +39,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\module\Figure.h">
+      <Filter>src\module</Filter>
+    </ClInclude>
+    <ClInclude Include="src\module\RandomCircle.h">
+      <Filter>src\module</Filter>
+    </ClInclude>
+    <ClInclude Include="src\module\RandomBorder.h">
       <Filter>src\module</Filter>
     </ClInclude>
   </ItemGroup>

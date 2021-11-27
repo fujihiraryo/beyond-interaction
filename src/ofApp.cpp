@@ -3,9 +3,11 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-    ofBackground(47, 47, 47);
+    ofBackground(0, 0, 0);
     ofEnableAlphaBlending();
     ofSetCircleResolution(100);
+    randomCircle.setup();
+    randomBorder.setup();
 }
 
 //--------------------------------------------------------------
@@ -15,9 +17,14 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
+    std::string fps = ofToString(ofGetFrameRate()) + "fps";
+    ofSetWindowTitle(fps);
     // figure.draw();
     // figure.drawCircle();
-    figure.drawGradation();
+    // figure.drawGradation();
+    // randomCircle.draw();
+    randomBorder.setup();
+    randomBorder.draw();
 }
 
 //--------------------------------------------------------------

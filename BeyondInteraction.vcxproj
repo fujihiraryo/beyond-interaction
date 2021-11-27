@@ -182,10 +182,14 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\module\Figure.cpp" />
+    <ClCompile Include="src\module\RandomBorder.cpp" />
+    <ClCompile Include="src\module\RandomCircle.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\module\Figure.h" />
+    <ClInclude Include="src\module\RandomBorder.h" />
+    <ClInclude Include="src\module\RandomCircle.h" />
     <ClInclude Include="src\ofApp.h" />
   </ItemGroup>
   <ItemGroup>

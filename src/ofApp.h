@@ -2,10 +2,14 @@
 
 #include "ofMain.h"
 #include "module/Figure.h"
+#include "module/RandomCircle.h"
+#include "module/RandomBorder.h"
 
 class ofApp : public ofBaseApp {
 
     Figure figure;
+    RandomCircle randomCircle;
+    RandomBorder randomBorder;
 
 public:
     void setup();
