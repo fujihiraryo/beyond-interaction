@@ -2,28 +2,30 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-	ofBackground(0, 0, 0);
-	ofEnableAlphaBlending();
-	ofSetCircleResolution(100);
-	randomCircle.setup();
-	randomBorder.setup();
+    ofBackground(0, 0, 0);
+    ofEnableAlphaBlending();
+    ofSetCircleResolution(100);
+    randomCircle.setup();
+    randomBorder.setup();
+    animation.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-
+    animation.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	std::string fps = ofToString(ofGetFrameRate()) + "fps";
-	ofSetWindowTitle(fps);
-	// figure.draw();
-	// figure.drawCircle();
-	// figure.drawGradation();
-	// randomCircle.draw();
-	randomBorder.setup();
-	randomBorder.draw();
+    std::string fps = ofToString(ofGetFrameRate()) + "fps";
+    ofSetWindowTitle(fps);
+    //figure.draw();
+    //figure.drawCircle();
+    //figure.drawGradation();
+    //randomCircle.draw();
+    //randomBorder.setup();
+    //randomBorder.draw();
+    animation.draw();
 }
 
 //--------------------------------------------------------------

@@ -1,15 +1,17 @@
 #pragma once
 
 #include "ofMain.h"
+#include "module/Animation.h"
 #include "module/Figure.h"
-#include "module/RandomCircle.h"
 #include "module/RandomBorder.h"
+#include "module/RandomCircle.h"
 
 class ofApp : public ofBaseApp {
 
     Figure figure;
     RandomCircle randomCircle;
     RandomBorder randomBorder;
+    Animation animation;
 
 public:
     void setup();
