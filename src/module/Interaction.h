@@ -8,6 +8,8 @@ class Ball {
     float speedX;
     float speedY;
     float radius;
+    float gravity;
+    float friction;
 
 public:
     void setup();

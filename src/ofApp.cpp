@@ -5,6 +5,7 @@ void ofApp::setup() {
     ofBackground(0, 0, 0);
     ofEnableAlphaBlending();
     ofSetCircleResolution(100);
+    ofSetBackgroundAuto(false);
     interaction.setup();
 }
 
@@ -17,6 +18,8 @@ void ofApp::update() {
 void ofApp::draw() {
     std::string fps = ofToString(ofGetFrameRate()) + "fps";
     ofSetWindowTitle(fps);
+    ofSetColor(0, 0, 0, 23);
+    ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     interaction.draw();
 }
 

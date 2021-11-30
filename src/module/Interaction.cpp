@@ -3,14 +3,19 @@
 void Ball::setup() {
     locX = ofRandom(0, ofGetWidth());
     locY = ofRandom(0, ofGetHeight());
-    speedX = ofRandom(-5, 5);
-    speedY = ofRandom(-5, 5);
-    radius = ofRandom(4, 40);
+    speedX = ofRandom(-50, 50);
+    speedY = ofRandom(-50, 50);
+    radius = ofRandom(1, 10);
+    gravity = 0.01;
+    friction = 0.999;
 }
 
 void Ball::update(bool isMousePressed, bool isMouseReleased) {
-    locX += speedX;
-    locY += speedY;
+    speedX *= friction;
+    speedY *= friction;
+    speedY += gravity;
+    locX += speedX + ofRandom(-1, 1);
+    locY += speedY + ofRandom(-1, 1);
     if (isMousePressed) {
         speedX = (ofGetMouseX() - locX) / 100;
         speedY = (ofGetMouseY() - locY) / 100;
