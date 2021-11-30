@@ -33,7 +33,7 @@ void Ball::draw() {
 
 void Interaction::setup() {
     isMousePressed = false;
-    color = ofColor(255, 63, 63);
+    color = ofColor(63, 63, 255);
     for (int i = 0; i < 100; i++) {
         Ball ball;
         ball.setup();
@@ -42,6 +42,12 @@ void Interaction::setup() {
 }
 
 void Interaction::update() {
+    if (isMousePressed) {
+        color = ofColor(255, 63, 63);
+    }
+    if (isMouseReleased) {
+        color = ofColor(63, 63, 255);
+    }
     for (Ball& ball : ballList) {
         ball.update(isMousePressed, isMouseReleased);
     }
@@ -49,6 +55,7 @@ void Interaction::update() {
 }
 
 void Interaction::draw() {
+    ofSetColor(color);
     for (Ball ball : ballList) {
         ball.draw();
     }
