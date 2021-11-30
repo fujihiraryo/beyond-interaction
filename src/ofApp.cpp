@@ -2,22 +2,22 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-	ofBackground(0, 0, 0);
-	ofEnableAlphaBlending();
-	ofSetCircleResolution(100);
-	interaction.setup();
+    ofBackground(0, 0, 0);
+    ofEnableAlphaBlending();
+    ofSetCircleResolution(100);
+    interaction.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-	interaction.update();
+    interaction.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	std::string fps = ofToString(ofGetFrameRate()) + "fps";
-	ofSetWindowTitle(fps);
-	interaction.draw();
+    std::string fps = ofToString(ofGetFrameRate()) + "fps";
+    ofSetWindowTitle(fps);
+    interaction.draw();
 }
 
 //--------------------------------------------------------------
@@ -42,12 +42,12 @@ void ofApp::mouseDragged(int x, int y, int button) {
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button) {
-	interaction.mousePressed(x, y, button);
+    interaction.mousePressed(x, y, button);
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
-	interaction.mouseReleased(x, y, button);
+    interaction.mouseReleased(x, y, button);
 }
 
 //--------------------------------------------------------------
