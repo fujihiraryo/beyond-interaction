@@ -25,6 +25,9 @@
     <ClCompile Include="src\module\Animation.cpp">
       <Filter>src\module</Filter>
     </ClCompile>
+    <ClCompile Include="src\module\Interaction.cpp">
+      <Filter>src\module</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -51,6 +54,9 @@
       <Filter>src\module</Filter>
     </ClInclude>
     <ClInclude Include="src\module\Animation.h">
+      <Filter>src\module</Filter>
+    </ClInclude>
+    <ClInclude Include="src\module\Interaction.h">
       <Filter>src\module</Filter>
     </ClInclude>
   </ItemGroup>

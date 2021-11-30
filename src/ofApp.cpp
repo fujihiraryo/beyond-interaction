@@ -2,30 +2,22 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-    ofBackground(0, 0, 0);
-    ofEnableAlphaBlending();
-    ofSetCircleResolution(100);
-    randomCircle.setup();
-    randomBorder.setup();
-    animation.setup();
+	ofBackground(0, 0, 0);
+	ofEnableAlphaBlending();
+	ofSetCircleResolution(100);
+	interaction.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-    animation.update();
+	interaction.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-    std::string fps = ofToString(ofGetFrameRate()) + "fps";
-    ofSetWindowTitle(fps);
-    //figure.draw();
-    //figure.drawCircle();
-    //figure.drawGradation();
-    //randomCircle.draw();
-    //randomBorder.setup();
-    //randomBorder.draw();
-    animation.draw();
+	std::string fps = ofToString(ofGetFrameRate()) + "fps";
+	ofSetWindowTitle(fps);
+	interaction.draw();
 }
 
 //--------------------------------------------------------------
@@ -50,12 +42,12 @@ void ofApp::mouseDragged(int x, int y, int button) {
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button) {
-
+	interaction.mousePressed(x, y, button);
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
-
+	interaction.mouseReleased(x, y, button);
 }
 
 //--------------------------------------------------------------
